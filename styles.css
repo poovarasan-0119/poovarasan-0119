@@ -1,22 +1,17 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* General Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
     overflow-x: hidden;
 }
-
-/* Header Styling */
 header {
     background-color: #292b2c;
-    color: #fff;
+    color: #d5dde6;
     padding: 20px;
     animation: slideIn 1s ease-out;
 }
@@ -44,7 +39,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #296dd3;
     font-size: 18px;
     transition: color 0.3s;
 }
@@ -52,18 +47,21 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff6f61;
 }
-
-/* Hero Section Styling */
 .hero {
-    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    background: url("itachi-uchiha.3840x2160.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: rgb(255, 208, 0);
     animation: fadeIn 2s ease-in-out;
+    width:100%;
+    height:110vh;
 }
 
 .hero h1 {
@@ -82,7 +80,7 @@ nav ul li a:hover {
 .cta-btn {
     padding: 12px 30px;
     background-color: #ff6f61;
-    color: white;
+    color: #ffffffd8;
     text-decoration: none;
     font-size: 20px;
     border-radius: 5px;
@@ -150,12 +148,12 @@ footer .social-links a:hover {
 
 @keyframes slideUp {
     from {
-        transform: translateY(50px);
+        transform: translateY(500px);
         opacity: 0;
     }
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -197,4 +195,8 @@ footer .social-links a:hover {
     .about h2 {
         font-size: 28px;
     }
+    *{
+        background-image: image-set(url(itachi-uchiha.3840x2160.jpg));
+    }
+
 }
